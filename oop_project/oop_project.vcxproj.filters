@@ -23,10 +23,16 @@
     <ClInclude Include="clothingItems.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="shirt.h">
+    <ClInclude Include="topClothes.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="pants.h">
+    <ClInclude Include="botClothes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="accessories.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="shoes.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

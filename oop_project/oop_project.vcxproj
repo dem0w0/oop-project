@@ -130,9 +130,11 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="accessories.h" />
+    <ClInclude Include="botClothes.h" />
     <ClInclude Include="clothingItems.h" />
-    <ClInclude Include="pants.h" />
-    <ClInclude Include="shirt.h" />
+    <ClInclude Include="shoes.h" />
+    <ClInclude Include="topClothes.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -43,7 +43,7 @@ int main() {
 		case 2:
 			isValidChoice = true;
 			system(CLEAR_SCREEN);
-			cout << "\033[1;32mInventory\033[0m";
+			cout << "\033[1;32mInventory\033[0m";	
 			break;
 		case 3:
 			isValidChoice = true;
@@ -70,6 +70,9 @@ int main() {
 	system("pause");
 	return 0;
 }
+
+//Color codes
+
 //cout << "\033[1;31mThis text is red!\033[0m" << endl; // Red
 //cout << "\033[1;32mThis text is green!\033[0m" << endl; // Green
 //cout << "\033[1;33mThis text is yellow!\033[0m" << endl; // Yellow
