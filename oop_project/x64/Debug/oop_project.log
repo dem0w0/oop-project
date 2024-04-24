@@ -1,3 +1,3 @@
 ﻿  main.cpp
-C:\Users\Демир\Documents\GitHub\oop-project\oop_project\main.cpp(14,17): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-  oop_project.vcxproj -> C:\Users\Демир\Documents\GitHub\oop-project\x64\Debug\oop_project.exe
+D:\Program files\github\repository1\oop-project\oop-project\oop_project\main.cpp(17,17): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  oop_project.vcxproj -> D:\Program files\github\repository1\oop-project\oop-project\x64\Debug\oop_project.exe
