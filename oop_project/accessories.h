@@ -17,7 +17,12 @@ public:
 		cout << "Size: " << size << endl;
 		cout << "Price: " << price << endl;
 		cout << "Quantity: " << quantity << endl;
-		cout << "Availability: " << availability << endl;
+		if (availability == true) {
+			cout << "Available" << endl;
+		}
+		else {
+			cout << "Not available" << endl;
+		}
 		cout << "Accessorie type: " << type << endl;
 		cout << "Seasonality: " << seasonality << endl;
 	}

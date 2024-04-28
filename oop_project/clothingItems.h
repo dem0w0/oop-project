@@ -24,11 +24,16 @@ public:
 	ClothingItem() : name("Default"), size("Default"), price(0.0), quantity(0), availability(quantity > 0) {}
 	ClothingItem(string n, string s, double p, int q) : name(n), size(s), price(p), quantity(q), availability(quantity > 0) {}
 	
-	virtual void display() {
+	virtual void display() const{
 		cout << endl << "Name: " << name << endl;
 		cout << "Size: " << size << endl;
 		cout << "Price: " << price << endl;
 		cout << "Quantity: " << quantity << endl;
-		cout << "Availability: " << availability << endl;
+		if (availability == true) {
+			cout << "Available" << endl;
+		}
+		else {
+			cout << "Not available" << endl;
+		}
 	}
 };

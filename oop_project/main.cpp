@@ -1,9 +1,11 @@
 ﻿#include <iostream>
+#include <vector>
 #include <iomanip>
 #include <limits>
 #include <chrono>
 #include <thread>
 #include "clothings.h"
+#include <fstream>
 
 #ifdef _WIN32
     #define CLEAR_SCREEN "cls"
@@ -40,7 +42,61 @@ void inventoryChoice(int width) {
 	displayCentered("----", width);
 }
 
+void writeClothingData() {
+	ofstream clothingsFile("objects.txt", ios::app);
+	if (!clothingsFile.is_open()) {
+		cout << "Problem with opening the Library.txt while writing";
+	}
+	cout << endl << "Writing data to Library.txt" << endl;
+	for (int i = 0; i < 100; ++i) {
+		clothingsFile << "Object" << i + 1 << "," << i << "," << i * 1000 << "," << i << endl;
+	}
+
+	clothingsFile.close();
+}
+
+void autoCreatingObjects() {
+	ifstream clothingFile("objects.txt");
+	if (!clothingFile.is_open()) {
+		cout << "Problem with opening the objects.txt while reading";
+	}
+	string line;
+	vector<ClothingItem> obj;
+
+	while (getline(clothingFile, line)) {
+		size_t start = 0;
+		size_t end = line.find(',');
+
+		string name = line.substr(start, end - start);
+
+		start = end + 1;
+		end = line.find(',', start);
+
+		string size = line.substr(start, end - start);
+
+		start = end + 1;
+		end = line.find(',', start);
+
+		double price = stod(line.substr(start, end - start));
+
+		start = end + 1;
+
+		int quantity = stoi(line.substr(start, end - start));
+
+		obj.emplace_back(name, size, price, quantity);
+	}
+
+	for (const auto& obj : obj) {
+		obj.display();
+	}
+
+	clothingFile.close();
+}
+
 int main() {
+
+	writeClothingData();
+	autoCreatingObjects();
 
 	int width = 30, choice, invChoice;
 	bool running = true, inInventoryMenu = false;
