@@ -35,5 +35,8 @@
     <ClInclude Include="shoes.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="clothings.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

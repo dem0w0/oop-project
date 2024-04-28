@@ -133,6 +133,7 @@
     <ClInclude Include="accessories.h" />
     <ClInclude Include="botClothes.h" />
     <ClInclude Include="clothingItems.h" />
+    <ClInclude Include="clothings.h" />
     <ClInclude Include="shoes.h" />
     <ClInclude Include="topClothes.h" />
   </ItemGroup>

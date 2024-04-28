@@ -1,9 +1,9 @@
 ﻿#include <iostream>
-#include "clothingItems.h"
 #include <iomanip>
 #include <limits>
 #include <chrono>
 #include <thread>
+#include "clothings.h"
 
 #ifdef _WIN32
     #define CLEAR_SCREEN "cls"
@@ -39,11 +39,9 @@ void inventoryChoice(int width) {
 	displayCentered("5. Back to the Main", width);
 	displayCentered("----", width);
 }
-void incorrectChoice() {
-
-}
 
 int main() {
+
 	int width = 30, choice, invChoice;
 	bool running = true, inInventoryMenu = false;
 
@@ -54,8 +52,8 @@ int main() {
 			system(CLEAR_SCREEN);
 			cin.clear();
 			cin.ignore(numeric_limits<streamsize>::max(), '\n');
-			cout << "\033[1;31mInvalid input. Please enter a number.\033[0m\n";
-			this_thread::sleep_for(chrono::seconds(2));
+			cout << "\033[1;31mInvalid input. Please enter a number.\033[0m\nPress Enter to continue...";
+			cin.get();
 			system(CLEAR_SCREEN);
 			continue;
 		}
@@ -77,8 +75,8 @@ int main() {
 						system(CLEAR_SCREEN);
 						cin.clear();
 						cin.ignore(numeric_limits<streamsize>::max(), '\n');
-						cout << "\033[1;31mInvalid input. Please enter a number.\033[0m\n";
-						this_thread::sleep_for(chrono::seconds(2));
+						cout << "\033[1;31mInvalid input. Please enter a number.\033[0m\nPress Enter to continue...";
+						cin.get();
 						system(CLEAR_SCREEN);
 						continue;
 					}
@@ -105,9 +103,9 @@ int main() {
 						break;
 					default:
 						system(CLEAR_SCREEN);
-						cout << "\033[1;31mThe choice is incorrect try again\033[0m";
+						cout << "\033[1;31mThe choice is incorrect try again\033[0m\nPress Enter to continue...";
 						cin.ignore(numeric_limits<streamsize>::max(), '\n');
-						this_thread::sleep_for(chrono::seconds(2));
+						cin.get();
 						break;
 					}
 
@@ -132,8 +130,6 @@ int main() {
 			default:
 				system(CLEAR_SCREEN);
 				cout << "\033[1;31mThe choice is incorrect try again\033[0m";
-				cin.ignore(numeric_limits<streamsize>::max(), '\n');
-				this_thread::sleep_for(chrono::seconds(2));
 				break;
 		}
 

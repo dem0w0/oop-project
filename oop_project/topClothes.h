@@ -1,3 +1,4 @@
+#pragma once
 #include "clothingItems.h"
 #include <iostream>
 #include <string>
@@ -10,4 +11,14 @@ private:
 public:
 	TopClothes() : neckline("Default"), sleeveLength("Default") {}
 	TopClothes(string n, string s, double p, int q, string neck, string length) : ClothingItem(n, s, p, q), neckline(neck), sleeveLength(length) {}
+
+	void display() {
+		cout << endl << "Name: " << name << endl;
+		cout << "Size: " << size << endl;
+		cout << "Price: " << price << endl;
+		cout << "Quantity: " << quantity << endl;
+		cout << "Availability: " << availability << endl;
+		cout << "Neck Line: " << neckline << endl;
+		cout << "Sleeve Length: " << sleeveLength << endl;
+	}
 };

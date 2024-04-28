@@ -7,8 +7,8 @@
       "RelativeMoniker": "D:0:0:{0DFE47A7-E946-4A52-B0FB-813899316591}|oop_project\\oop_project.vcxproj|solutionrelative:oop_project\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0DFE47A7-E946-4A52-B0FB-813899316591}|oop_project\\oop_project.vcxproj|D:\\Program files\\github\\repository1\\oop-project\\oop-project\\oop_project\\topClothes.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{0DFE47A7-E946-4A52-B0FB-813899316591}|oop_project\\oop_project.vcxproj|solutionrelative:oop_project\\topClothes.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{0DFE47A7-E946-4A52-B0FB-813899316591}|oop_project\\oop_project.vcxproj|D:\\Program files\\github\\repository1\\oop-project\\oop-project\\oop_project\\clothings.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{0DFE47A7-E946-4A52-B0FB-813899316591}|oop_project\\oop_project.vcxproj|solutionrelative:oop_project\\clothings.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0DFE47A7-E946-4A52-B0FB-813899316591}|oop_project\\oop_project.vcxproj|D:\\Program files\\github\\repository1\\oop-project\\oop-project\\oop_project\\shoes.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -25,6 +25,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{0DFE47A7-E946-4A52-B0FB-813899316591}|oop_project\\oop_project.vcxproj|D:\\Program files\\github\\repository1\\oop-project\\oop-project\\oop_project\\clothingItems.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{0DFE47A7-E946-4A52-B0FB-813899316591}|oop_project\\oop_project.vcxproj|solutionrelative:oop_project\\clothingItems.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DFE47A7-E946-4A52-B0FB-813899316591}|oop_project\\oop_project.vcxproj|D:\\Program files\\github\\repository1\\oop-project\\oop-project\\oop_project\\topClothes.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{0DFE47A7-E946-4A52-B0FB-813899316591}|oop_project\\oop_project.vcxproj|solutionrelative:oop_project\\topClothes.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,8 +38,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 6,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "clothings.h",
+              "DocumentMoniker": "D:\\Program files\\github\\repository1\\oop-project\\oop-project\\oop_project\\clothings.h",
+              "RelativeDocumentMoniker": "oop_project\\clothings.h",
+              "ToolTip": "D:\\Program files\\github\\repository1\\oop-project\\oop-project\\oop_project\\clothings.h",
+              "RelativeToolTip": "oop_project\\clothings.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-04-28T15:22:59.67Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 2,
@@ -44,9 +61,10 @@
               "RelativeDocumentMoniker": "oop_project\\shoes.h",
               "ToolTip": "D:\\Program files\\github\\repository1\\oop-project\\oop-project\\oop_project\\shoes.h",
               "RelativeToolTip": "oop_project\\shoes.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAABvAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-04-19T07:45:21.859Z"
+              "WhenOpened": "2024-04-19T07:45:21.859Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -56,9 +74,10 @@
               "RelativeDocumentMoniker": "oop_project\\accessories.h",
               "ToolTip": "D:\\Program files\\github\\repository1\\oop-project\\oop-project\\oop_project\\accessories.h",
               "RelativeToolTip": "oop_project\\accessories.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAA7AAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-04-19T07:45:12.091Z"
+              "WhenOpened": "2024-04-19T07:45:12.091Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -68,21 +87,9 @@
               "RelativeDocumentMoniker": "oop_project\\botClothes.h",
               "ToolTip": "D:\\Program files\\github\\repository1\\oop-project\\oop-project\\oop_project\\botClothes.h",
               "RelativeToolTip": "oop_project\\botClothes.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAIAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-04-19T07:44:59.583Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "topClothes.h",
-              "DocumentMoniker": "D:\\Program files\\github\\repository1\\oop-project\\oop-project\\oop_project\\topClothes.h",
-              "RelativeDocumentMoniker": "oop_project\\topClothes.h",
-              "ToolTip": "D:\\Program files\\github\\repository1\\oop-project\\oop-project\\oop_project\\topClothes.h",
-              "RelativeToolTip": "oop_project\\topClothes.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAkAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-04-19T07:44:47.885Z",
+              "WhenOpened": "2024-04-19T07:44:59.583Z",
               "EditorCaption": ""
             },
             {
@@ -93,9 +100,23 @@
               "RelativeDocumentMoniker": "oop_project\\clothingItems.h",
               "ToolTip": "D:\\Program files\\github\\repository1\\oop-project\\oop-project\\oop_project\\clothingItems.h",
               "RelativeToolTip": "oop_project\\clothingItems.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAB7AAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA4AAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-04-09T06:49:57.869Z"
+              "WhenOpened": "2024-04-09T06:49:57.869Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "topClothes.h",
+              "DocumentMoniker": "D:\\Program files\\github\\repository1\\oop-project\\oop-project\\oop_project\\topClothes.h",
+              "RelativeDocumentMoniker": "oop_project\\topClothes.h",
+              "ToolTip": "D:\\Program files\\github\\repository1\\oop-project\\oop-project\\oop_project\\topClothes.h",
+              "RelativeToolTip": "oop_project\\topClothes.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-04-19T07:44:47.885Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -105,7 +126,7 @@
               "RelativeDocumentMoniker": "oop_project\\main.cpp",
               "ToolTip": "D:\\Program files\\github\\repository1\\oop-project\\oop-project\\oop_project\\main.cpp",
               "RelativeToolTip": "oop_project\\main.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAJ4AAABCAAAA",
+              "ViewState": "AQIAAEIAAAAAAAAAAAAAAAsAAAAGAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-04-09T06:49:55.234Z",
               "EditorCaption": ""
