@@ -24,7 +24,7 @@ public:
 	ClothingItem() : name("Default"), size("Default"), price(0.0), quantity(0), availability(quantity > 0) {}
 	ClothingItem(string n, string s, double p, int q) : name(n), size(s), price(p), quantity(q), availability(quantity > 0) {}
 	
-	virtual void display() const{
+	virtual void displayDetails(){
 		cout << endl << "Name: " << name << endl;
 		cout << "Size: " << size << endl;
 		cout << "Price: " << price << endl;
@@ -35,5 +35,9 @@ public:
 		else {
 			cout << "Not available" << endl;
 		}
+	}
+	
+	virtual string getType() const {
+		return "ClothingItem";
 	}
 };

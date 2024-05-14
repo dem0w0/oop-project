@@ -12,18 +12,13 @@ public:
 	BotClothes() : waistType("Default"), length("Default") {}
 	BotClothes(string n, string s, double p, int q, string waist, string length) : ClothingItem(n, s, p, q), waistType(waist), length(length) {}
 
-	void display() {
-		cout << endl << "Name: " << name << endl;
-		cout << "Size: " << size << endl;
-		cout << "Price: " << price << endl;
-		cout << "Quantity: " << quantity << endl;
-		if (availability == true) {
-			cout << "Available" << endl;
-		}
-		else {
-			cout << "Not available" << endl;
-		}
+	void displayDetails() override {
+		ClothingItem::displayDetails();
 		cout << "Waist type: " << waistType << endl;
 		cout << "Length: " << length << endl;
+	}
+
+	string getType() const override {
+		return "BotClothes";
 	}
 };
