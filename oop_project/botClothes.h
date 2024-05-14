@@ -12,10 +12,8 @@ public:
 	BotClothes() : waistType("Default"), length("Default") {}
 	BotClothes(string n, string s, double p, int q, string waist, string length) : ClothingItem(n, s, p, q), waistType(waist), length(length) {}
 
-	void displayDetails() override {
-		ClothingItem::displayDetails();
-		cout << "Waist type: " << waistType << endl;
-		cout << "Length: " << length << endl;
+	string getDetails() const override {
+		return waistType + " " + length;
 	}
 
 	string getType() const override {

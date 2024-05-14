@@ -9,9 +9,9 @@
 #include <ctime>
 
 #ifdef _WIN32
-    #define CLEAR_SCREEN "cls"
+#define CLEAR_SCREEN "cls"
 #else
-    #define CLEAR_SCREEN "clear"
+#define CLEAR_SCREEN "clear"
 #endif
 
 using namespace std;
@@ -58,7 +58,7 @@ string generateRandomType() {
 }
 
 string generateRandomSize() {
-	const vector<string> sizes = { "S", "M", "L", "XL", "XXL" };
+	const vector<string> sizes = { " S ", " M ", " L ", " XL", "XXL" };
 	return sizes[rand() % sizes.size()];
 }
 
@@ -71,7 +71,7 @@ int generateRandomQuantity(int minQuantity, int maxQuantity) {
 }
 
 string generateRandomNeckline() {
-	const vector<string> necklines = { "Crew Neck", "V-Neck", "Scoop Neck", "Halter Neck", "Off-the-Shoulder" };
+	const vector<string> necklines = { "Crew Neck", "V-Neck", "Scoop Neck", "Halter Neck" };
 	return necklines[rand() % necklines.size()];
 }
 
@@ -123,7 +123,7 @@ void generateRandomObjectsToFile(const string& filename, int numObjects) {
 		string name = generateRandomName(8);
 		string size = generateRandomSize();
 		double price = generateRandomPrice(10.0, 100.0);
-		int quantity = generateRandomQuantity(1, 100);
+		int quantity = generateRandomQuantity(10, 100);
 
 		outFile << type << "," << name << "," << size << "," << price << "," << quantity;
 
@@ -234,74 +234,82 @@ void autoCreatingObjects(vector<ClothingItem*>& items) {
 			string shoeType = line.substr(start, end - start);
 			start = end + 1;
 			string material = line.substr(start);
-			items.push_back(new Accessories(name, size, price, quantity, shoeType, material));
+			items.push_back(new Shoes(name, size, price, quantity, shoeType, material));
 		}
 	}
 	clothingFile.close();
 }
+
 void displayWithPagination(vector<ClothingItem*>& items, const string& itemType) {
 	const int itemsPerPage = 10;
-	int page, totalPages = (items.size() + itemsPerPage - 1) / itemsPerPage;
+	int totalPages = (items.size() + itemsPerPage - 1) / itemsPerPage;
+
+	string userInput;
 	do {
-		cout << "Enter page number (1-" << totalPages << "): ";
-		cin >> page;
-	} while (page < 1 || page > totalPages);
-	int startIdx = (page - 1) * itemsPerPage;
-	int endIdx = min(startIdx + itemsPerPage, static_cast<int>(items.size()));
-	cout << "Showing: " << itemType << "Page: " << page << "/" << totalPages << "):" << endl;
-	for (int i = startIdx; i < endIdx; ++i) {
-		if (items[i]->getType() == itemType) {
-			cout << "Item " << i + 1 << ":" << endl;
-			items[i]->displayDetails();
-			cout << endl;
+		int page = 1;
+		while (true) {
+			system(CLEAR_SCREEN);
+			cout << "Showing: " << itemType << " Page: (" << page << "/" << totalPages << "):" << endl;
+
+			vector<ClothingItem*> filteredItems;
+			for (ClothingItem* item : items) {
+				if (item->getType() == itemType) {
+					filteredItems.push_back(item);
+				}
+			}
+
+			int startIdx = (page - 1) * itemsPerPage;
+			int endIdx = min(startIdx + itemsPerPage, static_cast<int>(filteredItems.size()));
+
+			cout << "+--------+------+--------+---------+--------------+-------------------+" << endl;
+			cout << "|  Name  | Size | Price  | Quantity| Availability |     Additional    |" << endl;
+			cout << "+--------+------+--------+---------+--------------+-------------------+" << endl;
+
+			for (int i = startIdx; i < endIdx; ++i) {
+				filteredItems[i]->displayDetails();
+				cout << endl;
+			}
+
+			cout << "+--------+------+--------+---------+--------------+-------------------+" << endl;
+
+			cout << "Enter the command ('next', 'prev', 'exit' or page number which you want to go): ";
+			cin >> userInput;
+
+			if (userInput == "exit") {
+				return;
+			}
+			else if (userInput == "next") {
+				page = min(page + 1, totalPages);
+			}
+			else if (userInput == "prev") {
+				page = max(page - 1, 1);
+			}
+			else if (isdigit(userInput[0])) {
+				int pageNumber = stoi(userInput);
+				if (pageNumber >= 1 && pageNumber <= totalPages) {
+					page = pageNumber;
+				}
+				else {
+					cout << "Invalid page number. Please enter a number between 1 and " << totalPages << "." << endl;
+					cin.ignore(numeric_limits<streamsize>::max(), '\n');
+					cin.get();
+				}
+			}
+			else {
+				cout << "Invalid input. Please enter 'next', 'prev', a page number, or 'exit'." << endl;
+				cin.ignore(numeric_limits<streamsize>::max(), '\n');
+				cin.get();
+			}
 		}
-	}
+	} while (userInput != "exit");
 }
 
-/*void autoCreatingObjects() {
-	ifstream clothingFile("objects.txt");
-	if (!clothingFile.is_open()) {
-		cout << "Problem with opening the objects.txt while reading";
-	}
-	string line;
-	vector<ClothingItem> obj;
-
-	while (getline(clothingFile, line)) {
-		size_t start = 0;
-		size_t end = line.find(',');
-
-		string name = line.substr(start, end - start);
-
-		start = end + 1;
-		end = line.find(',', start);
-
-		string size = line.substr(start, end - start);
-
-		start = end + 1;
-		end = line.find(',', start);
-
-		double price = stod(line.substr(start, end - start));
-
-		start = end + 1;
-
-		int quantity = stoi(line.substr(start, end - start));
-
-		obj.emplace_back(name, size, price, quantity);
-	}
-
-	for (const auto& obj : obj) {
-		obj.display();
-	}
-
-	clothingFile.close();
-}
-*/
 int main() {
 	vector<ClothingItem*> items;
 	generateRandomObjectsToFile("objects.txt", 100);
 	autoCreatingObjects(items);
 
-	/*int width = 30, choice, invChoice;
+	int width = 30, choice, invChoice;
 	bool running = true, inInventoryMenu = false;
 
 	while (running) {
@@ -318,78 +326,82 @@ int main() {
 		}
 
 		switch (choice) {
-			case 1:
-				system(CLEAR_SCREEN);
-				cout << "Addition of product...";
-				break;
-			case 2 :
-				inInventoryMenu = true;
-				while (inInventoryMenu) {
+		case 1:
+			system(CLEAR_SCREEN);
+			cout << "Addition of product...";
+			break;
+		case 2:
+			inInventoryMenu = true;
+			while (inInventoryMenu) {
 
+				system(CLEAR_SCREEN);
+				inventoryChoice(width);
+				cout << "Enter your choice: ";
+
+				if (!(cin >> invChoice)) {
 					system(CLEAR_SCREEN);
-					inventoryChoice(width);
-					cout << "Enter your choice: ";
-
-					if (!(cin >> invChoice)) {
-						system(CLEAR_SCREEN);
-						cin.clear();
-						cin.ignore(numeric_limits<streamsize>::max(), '\n');
-						cout << "\033[1;31mInvalid input. Please enter a number.\033[0m\nPress Enter to continue...";
-						cin.get();
-						system(CLEAR_SCREEN);
-						continue;
-					}
-
-					switch (invChoice) {
-					case 1:
-						system(CLEAR_SCREEN);
-						cout << "Viewing Accessories..." << endl;
-						break;
-					case 2:
-						system(CLEAR_SCREEN);
-						cout << "Viewing Shoes..." << endl;
-						break;
-					case 3:
-						system(CLEAR_SCREEN);
-						cout << "Viewing Top Clothes..." << endl;
-						break;
-					case 4:
-						system(CLEAR_SCREEN);
-						cout << "Viewing Bottom Clothes..." << endl;
-						break;
-					case 5:
-						inInventoryMenu = false;
-						break;
-					default:
-						system(CLEAR_SCREEN);
-						cout << "\033[1;31mThe choice is incorrect try again\033[0m\nPress Enter to continue...";
-						cin.ignore(numeric_limits<streamsize>::max(), '\n');
-						cin.get();
-						break;
-					}
-
-					if (inInventoryMenu) {
-						cout << "\nPress Enter to continue...";
-						cin.ignore(numeric_limits<streamsize>::max(), '\n');
-						cin.get();
-						system(CLEAR_SCREEN);
-					}
+					cin.clear();
+					cin.ignore(numeric_limits<streamsize>::max(), '\n');
+					cout << "\033[1;31mInvalid input. Please enter a number.\033[0m\nPress Enter to continue...";
+					cin.get();
+					system(CLEAR_SCREEN);
+					continue;
 				}
-				break;
-			case 3:
-				system(CLEAR_SCREEN);
-				cout << "Deleting the product...";
-				break;
-			case 4:
-				running = false;
-				system(CLEAR_SCREEN);
-				cout << "Exiting...";
-				return 0;
-				break;
-			default:
-				system(CLEAR_SCREEN);
-				cout << "\033[1;31mThe choice is incorrect try again\033[0m";
-				break;
+
+				switch (invChoice) {
+				case 1:
+					system(CLEAR_SCREEN);
+					cout << "Viewing Accessories..." << endl;
+					displayWithPagination(items, "Accessories");
+					break;
+				case 2:
+					system(CLEAR_SCREEN);
+					cout << "Viewing Shoes..." << endl;
+					displayWithPagination(items, "Shoes");
+					break;
+				case 3:
+					system(CLEAR_SCREEN);
+					cout << "Viewing Top Clothes..." << endl;
+					displayWithPagination(items, "TopClothes");
+					break;
+				case 4:
+					system(CLEAR_SCREEN);
+					cout << "Viewing Bottom Clothes..." << endl;
+					displayWithPagination(items, "BotClothes");
+					break;
+				case 5:
+					inInventoryMenu = false;
+					break;
+				default:
+					system(CLEAR_SCREEN);
+					cout << "\033[1;31mThe choice is incorrect try again\033[0m\nPress Enter to continue...";
+					cin.ignore(numeric_limits<streamsize>::max(), '\n');
+					cin.get();
+					break;
+				}
+
+				if (inInventoryMenu) {
+					cout << "\nPress Enter to continue...";
+					cin.ignore(numeric_limits<streamsize>::max(), '\n');
+					cin.get();
+					system(CLEAR_SCREEN);
+				}
+			}
+			break;
+		case 3:
+			system(CLEAR_SCREEN);
+			cout << "Deleting the product...";
+			break;
+		case 4:
+			running = false;
+			system(CLEAR_SCREEN);
+			cout << "Exiting...";
+			return 0;
+			break;
+		default:
+			system(CLEAR_SCREEN);
+			cout << "\033[1;31mThe choice is incorrect try again\033[0m";
+			break;
 		}
 
 		if (running) {
@@ -398,7 +410,7 @@ int main() {
 			cin.get();
 			system(CLEAR_SCREEN);
 		}
-	}*/
+	}
 	system("pause");
 	return 0;
 }

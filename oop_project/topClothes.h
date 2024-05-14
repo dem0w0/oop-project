@@ -12,10 +12,8 @@ public:
 	TopClothes() : neckline("Default"), sleeveLength("Default") {}
 	TopClothes(string n, string s, double p, int q, string neck, string length) : ClothingItem(n, s, p, q), neckline(neck), sleeveLength(length) {}
 
-	void displayDetails() override {
-		ClothingItem::displayDetails();
-		cout << "Neck Line: " << neckline << endl;
-		cout << "Sleeve Length: " << sleeveLength << endl;
+	string getDetails() const override {
+		return neckline + " " + sleeveLength;
 	}
 
 	string getType() const override {

@@ -12,10 +12,8 @@ public:
 	Accessories() : type("Default"), seasonality("Default") {}
 	Accessories(string n, string s, double p, int q, string t, string season) : ClothingItem(n, s, p, q), type(t), seasonality(season) {}
 
-	void displayDetails() override{
-		ClothingItem::displayDetails();
-		cout << "Accessorie type: " << type << endl;
-		cout << "Seasonality: " << seasonality << endl;
+	string getDetails() const override {
+		return type + " " + seasonality;
 	}
 	string getType() const override {
 		return "Accessories";
