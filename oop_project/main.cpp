@@ -304,9 +304,36 @@ void displayWithPagination(vector<ClothingItem*>& items, const string& itemType)
 	} while (userInput != "exit");
 }
 
+void addingObjectToTheFile(const string& itemtype) {
+	ofstream outFile("objects.txt");
+	if (!outFile.is_open()) {
+		cout << "Error with opening objects.txt file while adding new object";
+	}
+	string name, size, neckLine, sleeveLength, shoeType, accType, season, material, waistType, length;
+	double price;
+	int quantity;
+	cout << "Name (8 characters only): "; cin >> name;
+	cout << "Size (choose from: 'S', 'M', 'L', 'XL', 'XXL'): "; cin >> size;
+	cout << "Price: "; cin >> price;
+	cout << "Quantity: "; cin >> quantity;
+	if (itemtype == "TopClothes") {
+		
+	}
+	else if (itemtype == "BotClothes") {
+		
+	}
+	else if (itemtype == "Accessories") {
+		
+	}
+	else if (itemtype == "Shoes") {
+		
+	}
+	outFile.close();
+}
+
 int main() {
 	vector<ClothingItem*> items;
-	//generateRandomObjectsToFile("objects.txt", 100);
+	//generateRandomObjectsToFile("objects.txt", 1000);
 	autoCreatingObjects(items);
 
 	int width = 30, choice, invChoice;
