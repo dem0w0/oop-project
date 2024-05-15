@@ -5,6 +5,7 @@
 #include <chrono>
 #include <thread>
 #include <fstream>
+#include <sstream>
 #include <cstdlib>
 #include <ctime>
 
@@ -33,7 +34,7 @@ void displayMenu(int width) {
 }
 
 void inventoryChoice(int width) {
-	displayCentered("\033[1;32mInventory\033[0m", width + 9);
+	displayCentered("\033[1;32mInventory\033[0m", width + 11);
 	displayCentered("----", width);
 	displayCentered("1. Accessories", width);
 	displayCentered("2. Shoes", width);
@@ -242,7 +243,15 @@ void autoCreatingObjects(vector<ClothingItem*>& items) {
 
 void displayWithPagination(vector<ClothingItem*>& items, const string& itemType) {
 	const int itemsPerPage = 10;
-	int totalPages = (items.size() + itemsPerPage - 1) / itemsPerPage;
+
+	vector<ClothingItem*> filteredItems;
+	for (ClothingItem* item : items) {
+		if (item->getType() == itemType) {
+			filteredItems.push_back(item);
+		}
+	}
+
+	int totalPages = (filteredItems.size() + itemsPerPage - 1) / itemsPerPage;
 
 	string userInput;
 	do {
@@ -311,33 +320,295 @@ void addingObjectToTheFile(const string& itemtype) {
 	}
 	string name, size, neckLine, sleeveLength, shoeType, accType, season, material, waistType, length;
 	double price;
-	int quantity;
-	cout << "Name (8 characters only): "; cin >> name;
-	cout << "Size (choose from: 'S', 'M', 'L', 'XL', 'XXL'): "; cin >> size;
+	int quantity, choice;
+	bool choosing = false;
+	cout << endl << "Name (8 characters only): "; cin >> name;
+	choosing = true;
+	while (choosing) {
+		cout << "\nPlease choose size:\n\n1. S\n2. M\n3. L\n4. XL\n5. XXL\n\nEnter your choice: "; cin >> choice;
+		switch (choice) {
+		case 1:
+			size = " S ";
+			choosing = false;
+			break;
+		case 2:
+			size = " M ";
+			choosing = false;
+			break;
+		case 3:
+			size = " L ";
+			choosing = false;
+			break;
+		case 4:
+			size = " XL";
+			choosing = false;
+			break;
+		case 5:
+			size = "XXL";
+			choosing = false;
+			break;
+		default:
+			cout << "\033[1;31mIncorrect choice please try again!\033[0m";
+		}
+	}
 	cout << "Price: "; cin >> price;
 	cout << "Quantity: "; cin >> quantity;
 	if (itemtype == "TopClothes") {
-		
+		choosing = true;
+		while (choosing) {
+			cout << "Please choose neck line:\n\n1. Crew Neck\n2. V-Neck\n3. Scoop Neck\n4. Halter Neck\n\nEnter your choice: "; cin >> choice;
+			switch (choice) {
+			case 1:
+				neckLine = "Crew Neck";
+				choosing = false;
+				break;
+			case 2:
+				neckLine = "V-Neck";
+				choosing = false;
+				break;
+			case 3:
+				neckLine = "Scoop Neck";
+				choosing = false;
+				break;
+			case 4:
+				neckLine = "Halter Neck";
+				choosing = false;
+				break;
+			default:
+				cout << "\033[1;31mIncorrect choice please try again!\033[0m";
+				break;
+			}
+		}
+		choosing = true;
+		while (choosing) {
+			cout << "Please choose sleeve length:\n\n1. Short Sleeve\n2. Long Sleeve\n3. 3/4 Sleeve\n\nEnter your choice: "; cin >> choice;
+			switch (choice) {
+			case 1:
+				sleeveLength = "Short Sleeve";
+				choosing = false;
+				break;
+			case 2:
+				sleeveLength = "Long Sleeve";
+				choosing = false;
+				break;
+			case 3:
+				sleeveLength = "3/4 Sleeve";
+				choosing = false;
+				break;
+			default:
+				cout << "\033[1;31mIncorrect choice please try again!\033[0m";
+				break;
+			}
+		}
+		outFile << "TopClothes" << "," << name << "," << size << "," << price << "," << quantity << "," << neckLine << "," << sleeveLength << endl;
 	}
 	else if (itemtype == "BotClothes") {
-		
+		choosing = true;
+		while (choosing) {
+			cout << "Please choose waist type:\n\n1. High waist\n2. Mid Waist\n3. Low waist\n\nEnter your choice: "; cin >> choice;
+			switch (choice) {
+			case 1:
+				waistType = "High waist";
+				choosing = false;
+				break;
+			case 2:
+				waistType = "Mid Waist";
+				choosing = false;
+				break;
+			case 3:
+				waistType = "Low waist";
+				choosing = false;
+				break;
+			default:
+				cout << "\033[1;31mIncorrect choice please try again!\033[0m";
+				break;
+			}
+		}
+		choosing = true;
+		while (choosing) {
+			cout << "Please choose length:\n\n1. Ankle length\n2. Full length\n3. Capri Length\n\nEnter your choice: "; cin >> choice;
+			switch (choice) {
+			case 1:
+				length = "Ankle length";
+				choosing = false;
+				break;
+			case 2:
+				length = "Full length";
+				choosing = false;
+				break;
+			case 3:
+				length = "Capri Length";
+				choosing = false;
+				break;
+			default:
+				cout << "\033[1;31mIncorrect choice please try again!\033[0m";
+				break;
+			}
+		}
+		outFile << "BotClothes" << "," << name << "," << size << "," << price << "," << quantity << "," << waistType << "," << length << endl;
 	}
 	else if (itemtype == "Accessories") {
-		
+		choosing = true;
+		while (choosing) {
+			cout << "Please choose accessories type:\n\n1. Bag\n2. Scarf\n3. Hat\n4. Belt\n\nEnter your choice: "; cin >> choice;
+			switch (choice) {
+			case 1:
+				accType = "Bag";
+				choosing = false;
+				break;
+			case 2:
+				accType = "Scarf";
+				choosing = false;
+				break;
+			case 3:
+				accType = "Hat";
+				choosing = false;
+				break;
+			case 4:
+				accType = "Belt";
+				choosing = false;
+				break;
+			default:
+				cout << "\033[1;31mIncorrect choice please try again!\033[0m";
+				break;
+			}
+		}
+		choosing = true;
+		while (choosing) {
+			cout << "Please choose seasonality:\n\n1. Summer\n2. Winter\n3. Spring\n4. Fall\n\nEnter your choice: "; cin >> choice;
+			switch (choice) {
+			case 1:
+				season = "Summer";
+				choosing = false;
+				break;
+			case 2:
+				season = "Winter";
+				choosing = false;
+				break;
+			case 3:
+				season = "Spring";
+				choosing = false;
+				break;
+			case 4:
+				season = "Fall";
+				choosing = false;
+				break;
+			default:
+				cout << "\033[1;31mIncorrect choice please try again!\033[0m";
+				break;
+			}
+		}
+		outFile << "Accessories" << "," << name << "," << size << "," << price << "," << quantity << "," << accType << "," << season << endl;
 	}
 	else if (itemtype == "Shoes") {
-		
+		choosing = true;
+		while (choosing) {
+			cout << "Please choose shoes type:\n\n1. Sneakers\n2. Boots\n3. Sandals\n4. Flats\n\nEnter your choice: "; cin >> choice;
+			switch (choice) {
+			case 1:
+				shoeType = "Sneakers";
+				choosing = false;
+				break;
+			case 2:
+				shoeType = "Boots";
+				choosing = false;
+				break;
+			case 3:
+				shoeType = "Sandals";
+				choosing = false;
+				break;
+			case 4:
+				shoeType = "Flats";
+				choosing = false;
+				break;
+			default:
+				cout << "\033[1;31mIncorrect choice please try again!\033[0m";
+				break;
+			}
+		}
+		choosing = true;
+		while (choosing) {
+			cout << "Please choose material:\n\n1. Leather\n2. Canvas\n3. Synthetic\n4. Rubber\n\nEnter your choice: "; cin >> choice;
+			switch (choice) {
+			case 1:
+				material = "Leather";
+				choosing = false;
+				break;
+			case 2:
+				material = "Canvas";
+				choosing = false;
+				break;
+			case 3:
+				material = "Synthetic";
+				choosing = false;
+				break;
+			case 4:
+				material = "Rubber";
+				choosing = false;
+				break;
+			default:
+				cout << "\033[1;31mIncorrect choice please try again!\033[0m";
+				break;
+			}
+		}
+		outFile << "Shoes" << "," << name << "," << size << "," << price << "," << quantity << "," << shoeType << "," << material << endl;
 	}
 	outFile.close();
 }
 
+void deleteLineByName(const string& targetName) {
+	ifstream infile("objects.txt");
+	if (!infile) {
+		cerr << "Unable to open file" << endl;
+		return;
+	}
+
+	vector<string> lines;
+	string line;
+	bool found = false;
+
+	while (getline(infile, line)) {
+		istringstream iss(line);
+		string item, name;
+		getline(iss, item, ',');
+		getline(iss, name, ',');
+		if (name == targetName) {
+			cout << "Object is successfully deleted!" << endl;
+			found = true;
+		}
+		else {
+			lines.push_back(line);
+		}
+	}
+	infile.close();
+
+	if (!found) {
+		cerr << "\033[1;31mName is not found\033[0m" << endl;
+		return;
+	}
+
+	ofstream outfile("objects.txt");
+	for (const auto& l : lines) {
+		outfile << l << endl;
+	}
+	outfile.close();
+}
+
+void deleteClothingItems(vector<ClothingItem*>& items) {
+	for (auto item : items) {
+		delete item;
+	}
+	items.clear();
+	items.shrink_to_fit();
+}
+
 int main() {
 	vector<ClothingItem*> items;
-	//generateRandomObjectsToFile("objects.txt", 1000);
-	autoCreatingObjects(items);
+	//generateRandomObjectsToFile("objects.txt", 500);
 
-	int width = 30, choice, invChoice;
-	bool running = true, inInventoryMenu = false;
+	int width = 30, choice, invChoice, addChoice;
+	bool running = true, inInventoryMenu = false, inAddingMenu = false;
+	string targetName;
 
 	while (running) {
 		displayMenu(width);
@@ -351,13 +622,58 @@ int main() {
 			system(CLEAR_SCREEN);
 			continue;
 		}
-
 		switch (choice) {
 		case 1:
-			system(CLEAR_SCREEN);
-			cout << "Addition of product...";
+			inAddingMenu = true;
+			while (inAddingMenu) {
+				system(CLEAR_SCREEN);
+				cout << "Which type of product you want to add?\n\n1. Accessory\n2. Shoes\n3. Top Clothes\n4. Bottom Clothes\n5. Exit\n\nEnter your choice: ";
+				if (!(cin >> addChoice)) {
+					system(CLEAR_SCREEN);
+					cin.clear();
+					cin.ignore(numeric_limits<streamsize>::max(), '\n');
+					cout << "\033[1;31mInvalid input. Please enter a number.\033[0m\nPress Enter to continue...";
+					cin.get();
+					system(CLEAR_SCREEN);
+					continue;
+				}
+				switch (addChoice) {
+				case 1:
+					system(CLEAR_SCREEN);
+					addingObjectToTheFile("Accessories");
+					inAddingMenu = false;
+					break;
+				case 2:
+					system(CLEAR_SCREEN);
+					addingObjectToTheFile("Shoes");
+					inAddingMenu = false;
+					break;
+				case 3:
+					system(CLEAR_SCREEN);
+					addingObjectToTheFile("TopClothes");
+					inAddingMenu = false;
+					break;
+				case 4:
+					system(CLEAR_SCREEN);
+					addingObjectToTheFile("BotClothes");
+					inAddingMenu = false;
+					break;
+				case 5:
+					inAddingMenu = false;
+					break;
+				default:
+					system(CLEAR_SCREEN);
+					cout << "\033[1;31mThe choice is incorrect try again\033[0m\nPress Enter to continue...";
+					cin.ignore(numeric_limits<streamsize>::max(), '\n');
+					cin.get();
+					break;
+				}
+			}
+			
 			break;
 		case 2:
+			deleteClothingItems(items);
+			autoCreatingObjects(items);
 			inInventoryMenu = true;
 			while (inInventoryMenu) {
 
@@ -417,7 +733,13 @@ int main() {
 			break;
 		case 3:
 			system(CLEAR_SCREEN);
-			cout << "Deleting the product...";
+			cout << "Enter the name of object that you want to delete or 'exit' if you want to exit: "; cin >> targetName;
+			if (targetName == "exit") {
+				break;
+			}
+			else {
+				deleteLineByName(targetName);
+			}
 			break;
 		case 4:
 			running = false;

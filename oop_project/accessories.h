@@ -23,5 +23,9 @@ public:
 		ClothingItem::displayDetails();
 		cout << setw(10) << right << type << " |";
 		cout << setw(11) << left << seasonality << " |";
+		cout.unsetf(ios_base::floatfield);
+		cout.precision(6);
+		cout.fill(' ');
+		cout.setf(ios_base::fmtflags(0), ios_base::adjustfield);
 	}
 };

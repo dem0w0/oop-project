@@ -24,5 +24,9 @@ public:
 		ClothingItem::displayDetails();
 		cout << setw(11) << right << neckline << "|";
 		cout << setw(12) << left << sleeveLength << "|";
+		cout.unsetf(ios_base::floatfield);
+		cout.precision(6);
+		cout.fill(' ');
+		cout.setf(ios_base::fmtflags(0), ios_base::adjustfield);
 	}
 };
