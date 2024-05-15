@@ -4,12 +4,6 @@
 #include <iostream>
 #include <iomanip>
 
-#ifdef _WIN32
-#define CLEAR_SCREEN "cls"
-#else
-#define CLEAR_SCREEN "clear"
-#endif
-
 using namespace std;
 
 string centerText(const string& text, int width) {

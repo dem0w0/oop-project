@@ -24,7 +24,7 @@ void displayCentered(const string& text, int width) {
 }
 
 void displayMenu(int width) {
-	displayCentered("Storage", width);
+	displayCentered("\033[1;36mStorage\033[0m", width + 11);
 	displayCentered("----", width);
 	displayCentered("1. Add the product", width);
 	displayCentered("2. Check inventory", width);
@@ -40,7 +40,18 @@ void inventoryChoice(int width) {
 	displayCentered("2. Shoes", width);
 	displayCentered("3. Top clothes", width);
 	displayCentered("4. Bottom clothes", width);
-	displayCentered("5. Back to the Main", width);
+	displayCentered("5. Exit", width);
+	displayCentered("----", width);
+}
+
+void displayAddMenu(int width) {
+	displayCentered("\033[1;33mChoose type of product\033[0m", width + 11);
+	displayCentered("----", width);
+	displayCentered("1. Accessory", width);
+	displayCentered("2. Shoes", width);
+	displayCentered("3. Top Clothing", width);
+	displayCentered("4. Bottom Clothing", width);
+	displayCentered("5. Exit", width);
 	displayCentered("----", width);
 }
 
@@ -314,7 +325,7 @@ void displayWithPagination(vector<ClothingItem*>& items, const string& itemType)
 }
 
 void addingObjectToTheFile(const string& itemtype) {
-	ofstream outFile("objects.txt");
+	ofstream outFile("objects.txt", ios::app);
 	if (!outFile.is_open()) {
 		cout << "Error with opening objects.txt file while adding new object";
 	}
@@ -573,7 +584,7 @@ void deleteLineByName(const string& targetName) {
 		getline(iss, item, ',');
 		getline(iss, name, ',');
 		if (name == targetName) {
-			cout << "Object is successfully deleted!" << endl;
+			cout << "\033[1;32mObject is successfully deleted!\033[0m" << endl;
 			found = true;
 		}
 		else {
@@ -604,7 +615,7 @@ void deleteClothingItems(vector<ClothingItem*>& items) {
 
 int main() {
 	vector<ClothingItem*> items;
-	//generateRandomObjectsToFile("objects.txt", 500);
+	generateRandomObjectsToFile("objects.txt", 500);
 
 	int width = 30, choice, invChoice, addChoice;
 	bool running = true, inInventoryMenu = false, inAddingMenu = false;
@@ -627,7 +638,8 @@ int main() {
 			inAddingMenu = true;
 			while (inAddingMenu) {
 				system(CLEAR_SCREEN);
-				cout << "Which type of product you want to add?\n\n1. Accessory\n2. Shoes\n3. Top Clothes\n4. Bottom Clothes\n5. Exit\n\nEnter your choice: ";
+				displayAddMenu(width);
+				cout << "Enter your choice: ";
 				if (!(cin >> addChoice)) {
 					system(CLEAR_SCREEN);
 					cin.clear();
@@ -659,6 +671,7 @@ int main() {
 					inAddingMenu = false;
 					break;
 				case 5:
+					system(CLEAR_SCREEN);
 					inAddingMenu = false;
 					break;
 				default:
@@ -713,6 +726,7 @@ int main() {
 					displayWithPagination(items, "BotClothes");
 					break;
 				case 5:
+					system(CLEAR_SCREEN);
 					inInventoryMenu = false;
 					break;
 				default:
@@ -722,19 +736,13 @@ int main() {
 					cin.get();
 					break;
 				}
-
-				if (inInventoryMenu) {
-					cout << "\nPress Enter to continue...";
-					cin.ignore(numeric_limits<streamsize>::max(), '\n');
-					cin.get();
-					system(CLEAR_SCREEN);
-				}
 			}
 			break;
 		case 3:
 			system(CLEAR_SCREEN);
 			cout << "Enter the name of object that you want to delete or 'exit' if you want to exit: "; cin >> targetName;
 			if (targetName == "exit") {
+				system(CLEAR_SCREEN);
 				break;
 			}
 			else {
@@ -752,24 +760,7 @@ int main() {
 			cout << "\033[1;31mThe choice is incorrect try again\033[0m";
 			break;
 		}
-
-		if (running) {
-			cout << "\nPress Enter to continue...";
-			cin.ignore(numeric_limits<streamsize>::max(), '\n');
-			cin.get();
-			system(CLEAR_SCREEN);
-		}
 	}
 	system("pause");
 	return 0;
 }
-
-//Color codes
-
-//cout << "\033[1;31mThis text is red!\033[0m" << endl; // Red
-//cout << "\033[1;32mThis text is green!\033[0m" << endl; // Green
-//cout << "\033[1;33mThis text is yellow!\033[0m" << endl; // Yellow
-//cout << "\033[1;34mThis text is blue!\033[0m" << endl; // Blue
-//cout << "\033[1;35mThis text is magenta!\033[0m" << endl; // Magenta
-//cout << "\033[1;36mThis text is cyan!\033[0m" << endl; // Cyan
-//cout << "\033[1;37mThis text is white!\033[0m" << endl; // White
