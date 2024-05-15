@@ -19,12 +19,8 @@ public:
 		return "Shoes";
 	}
 	void displayDetails() const override {
-		cout << "| " << setw(8) << left << getName() << " |";
-		cout << setw(5) << left << getSize() << " |";
-		cout << setw(7) << right << fixed << setprecision(2) << getPrice() << " |";
-		cout << setw(8) << right << getQuantity() << " |";
-		cout << setw(13) << (isAvailable() ? "Available" : "Not available") << " |";
-		cout << setw(20) << left << "Type: " << type << " |";
-		cout << setw(20) << left << "Material: " << material << " |" << endl;
+		ClothingItem::displayDetails();
+		cout << setw(10) << right << type << " |";
+		cout << setw(11) << left << material << " |";
 	}
 };

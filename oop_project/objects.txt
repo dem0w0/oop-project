@@ -1,100 +1,100 @@
-Accessories,OoRpp2q9,XXL,13.1614,83,Hat,Spring
-Shoes,IBe1t0HE,XXL,64.6092,41,Sneakers,Rubber
-TopClothes,NAkw1qQL, S ,36.5987,32,Crew Neck,Long Sleeve
-Shoes,wMuEbEeN, M ,31.825,90,Sandals,Canvas
-Accessories,SAFDUmXa, S ,26.1174,73,Bag,Spring
-BotClothes,eWtzn8vi,XXL,83.1162,34,High Waist,Full Length
-Shoes,NYbEQ5ce, S ,56.5258,60,Sneakers,Canvas
-TopClothes,9xp4LXUB, L ,74.5302,23,V-Neck,Long Sleeve
-BotClothes,2De0RRr0, S ,15.5016,48,Mid Waist,Full Length
-Accessories,Tq3chTXc, S ,27.878,24,Hat,Spring
-Accessories,h1JHBApw, XL,80.1938,41,Hat,Spring
-BotClothes,7Q9dLVtx, M ,41.724,28,Low Waist,Ankle Length
-Accessories,gm1fYm1C, M ,30.9763,27,Scarf,Fall
-TopClothes,DUuYToAz, M ,39.4388,92,Crew Neck,Short Sleeve
-TopClothes,hS4YmttP, L ,43.405,69,Crew Neck,3/4 Sleeve
-Shoes,B7BQAU9R, M ,37.7386,94,Flats,Leather
-Accessories,FdGDeT43, S ,64.2082,20,Belt,Fall
-Shoes,FtjZIlQ5,XXL,44.152,77,Sneakers,Rubber
-BotClothes,VAA9o7zV, L ,52.3179,51,Mid Waist,Full Length
-Accessories,Z6KePTNE, L ,86.8462,24,Bag,Spring
-Shoes,mG0MxmmO, L ,80.864,67,Boots,Canvas
-Accessories,ZV9mH2DT,XXL,25.2522,38,Bag,Fall
-Accessories,VTfBTzg2, L ,61.0413,13,Scarf,Fall
-Shoes,TLg1HVVH, M ,94.9406,13,Boots,Rubber
-BotClothes,AuDgOmdK,XXL,63.8401,11,Low Waist,Capri Length
-Shoes,qx9bIjzX, M ,35.1512,33,Boots,Rubber
-Accessories,lcl6Bc3m, L ,10.5109,90,Bag,Summer
-BotClothes,X9cdMm5z,XXL,92.4659,30,Low Waist,Capri Length
-Shoes,AcvE55S9, L ,67.7734,11,Flats,Synthetic
-BotClothes,qzvZJ559, XL,38.9993,12,High Waist,Ankle Length
-TopClothes,WuXV6rSj,XXL,68.6166,28,V-Neck,Long Sleeve
-Shoes,D0qslltt, M ,38.6038,48,Sneakers,Leather
-BotClothes,aPV3qkvR,XXL,14.7572,56,High Waist,Capri Length
-Accessories,av2wq04Q, L ,39.4882,13,Bag,Fall
-TopClothes,ns8HoIHT, XL,71.5473,37,Crew Neck,Short Sleeve
-Accessories,k7fdzvpU, M ,86.6979,71,Scarf,Winter
-Accessories,YsVio4S5,XXL,41.3669,16,Belt,Winter
-BotClothes,mAOcmyns,XXL,32.9017,30,High Waist,Capri Length
-Accessories,YtRfB2Iq,XXL,56.4269,44,Scarf,Winter
-Accessories,7JkcpSBP, S ,50.9226,78,Hat,Spring
-BotClothes,IxaavBdM, S ,46.8712,49,High Waist,Full Length
-Shoes,mi7vc5mQ, XL,66.4248,81,Sneakers,Synthetic
-TopClothes,m5SaQoZZ, L ,85.179,27,Scoop Neck,Short Sleeve
-TopClothes,GsxiDZes, S ,54.2323,19,Crew Neck,Long Sleeve
-Shoes,UlvxPONC,XXL,62.7442,38,Sandals,Canvas
-TopClothes,YMZdrEN5,XXL,36.6921,66,V-Neck,Short Sleeve
-Accessories,sVACBvOW, L ,79.6335,48,Hat,Fall
-Shoes,cQddnRD4, M ,17.5286,11,Flats,Leather
-BotClothes,dMIrAyWS,XXL,93.3943,93,Mid Waist,Ankle Length
-TopClothes,Epnnn8sd, S ,39.6091,49,Crew Neck,Long Sleeve
-Shoes,zgPOJyKx, L ,27.9028,46,Sandals,Canvas
-BotClothes,wvl5VbIC, M ,60.0964,91,High Waist,Ankle Length
-Shoes,eKhRUez9, L ,58.1683,52,Boots,Synthetic
-BotClothes,lbE0fAlT, M ,11.3816,100,Mid Waist,Ankle Length
-Shoes,lyS4uupS,XXL,22.0057,76,Boots,Rubber
-BotClothes,0fBI4SDw, M ,11.2717,72,Low Waist,Capri Length
-Accessories,I9rM8r2s, M ,14.5842,78,Hat,Spring
-Accessories,ZeLIS3Km, S ,10.8432,10,Belt,Summer
-BotClothes,R9ZCKNu9, XL,36.7113,85,Mid Waist,Capri Length
-BotClothes,RRXkMraf, S ,13.3949,50,Low Waist,Capri Length
-TopClothes,tIAHzY6I, M ,32.833,84,Scoop Neck,Long Sleeve
-TopClothes,sNM0hLiA, S ,62.9942,89,V-Neck,Long Sleeve
-BotClothes,oRX8sXDy, S ,79.6829,59,High Waist,Ankle Length
-TopClothes,DhYDzIFZ, M ,55.9627,18,Halter Neck,Short Sleeve
-TopClothes,umDKR08a, S ,81.5094,75,Crew Neck,Short Sleeve
-Accessories,LY3rTk5s, L ,13.8179,25,Scarf,Winter
-BotClothes,lBxNLG4v, XL,82.8251,65,High Waist,Ankle Length
-Shoes,YeTDjuOt, L ,61.0743,42,Sandals,Rubber
-Shoes,hUPI3DXW,XXL,14.6089,76,Sneakers,Leather
-Shoes,dm7xG1I1, M ,26.3262,30,Sandals,Rubber
-Accessories,y3Q5NG2M,XXL,74.9147,58,Scarf,Winter
-Accessories,vjjGoT7k, S ,70.1053,71,Belt,Fall
-Shoes,sG5l7pF6, S ,19.7781,34,Sandals,Canvas
-BotClothes,EdWtYEgv, L ,97.8713,45,Low Waist,Full Length
-BotClothes,YLOodTzW,XXL,95.457,84,High Waist,Capri Length
-Accessories,iKolxYbx, M ,81.6468,99,Hat,Summer
-Shoes,0nDnSgcn, S ,87.7938,46,Flats,Rubber
-BotClothes,WigxtdJb,XXL,38.6944,31,Low Waist,Ankle Length
-BotClothes,QEUFn7VP, S ,29.809,14,Low Waist,Ankle Length
-BotClothes,KFZQiSrX, M ,80.6717,64,Mid Waist,Capri Length
-TopClothes,nwHGaUFi, S ,33.311,33,V-Neck,Short Sleeve
-TopClothes,FOiL6y16, XL,91.7353,89,Scoop Neck,Short Sleeve
-Accessories,yHy7MLVO, XL,85.5553,96,Scarf,Spring
-TopClothes,v8pThgWg, S ,78.9743,96,V-Neck,3/4 Sleeve
-TopClothes,kfThcIzU,XXL,66.856,91,Crew Neck,Short Sleeve
-Accessories,j3JUq6Ca, S ,33.679,59,Scarf,Winter
-BotClothes,ZJmoerfE, L ,20.0967,33,Mid Waist,Ankle Length
-Accessories,g5gvaLBC, XL,76.8374,52,Bag,Summer
-Shoes,1ZFf5oKd, L ,28.0676,83,Boots,Rubber
-Shoes,SuGw8OwR, S ,87.2802,70,Flats,Leather
-BotClothes,zRUDQjGI, L ,89.5599,37,Mid Waist,Full Length
-TopClothes,gBm5NrKI, L ,35.9835,70,Crew Neck,Long Sleeve
-BotClothes,GteFSC9x, L ,70.1904,42,Mid Waist,Capri Length
-TopClothes,zPikSS0J, XL,44.8909,66,V-Neck,3/4 Sleeve
-Accessories,uh2MwACK, S ,28.8668,76,Bag,Summer
-Shoes,hCJt6Vp8, M ,43.7346,57,Flats,Leather
-TopClothes,T8R9cn3e, S ,95.8168,58,Crew Neck,Long Sleeve
-BotClothes,X5USKgYV,XXL,23.2829,48,Mid Waist,Capri Length
-Accessories,VArk4qVZ,XXL,23.1483,70,Hat,Summer
-Accessories,OnLYd6y8, S ,38.45,76,Bag,Fall
+BotClothes,QIhtpQqv, L ,32.4485,58,Low Waist,Capri Length
+TopClothes,khL19wG9,XXL,43.6412,65,Scoop Neck,Long Sleeve
+BotClothes,puwNxNkC, S ,53.9192,39,Low Waist,Full Length
+TopClothes,Ei9PAWI4, XL,71.4814,28,Halter Neck,Short Sleeve
+Accessories,TfGtYjFf, S ,58.4567,54,Scarf,Winter
+TopClothes,EeJNWJV0, L ,70.9046,44,Halter Neck,Short Sleeve
+Accessories,VmFWclfe,XXL,31.0312,36,Scarf,Spring
+BotClothes,f792PCff, L ,77.9717,52,Low Waist,Ankle Length
+Accessories,yetZQyzu, M ,84.561,74,Bag,Winter
+TopClothes,Xo4G5Io6,XXL,96.7919,79,Scoop Neck,Short Sleeve
+Shoes,MtmrPplU,XXL,55.9572,98,Sandals,Canvas
+Accessories,ILAFyewh, S ,37.3705,57,Scarf,Summer
+Accessories,hAoMQ80X, XL,10.0797,66,Hat,Fall
+Shoes,Ha9ndAi9, S ,25.5928,82,Flats,Canvas
+BotClothes,OShGhe4W, M ,96.292,74,High Waist,Ankle Length
+BotClothes,QVDoRnEi, S ,92.5263,27,High Waist,Capri Length
+TopClothes,VTBcATEy,XXL,47.2832,15,V-Neck,3/4 Sleeve
+Accessories,PeoNcb42,XXL,95.2016,11,Hat,Fall
+BotClothes,Qa83O1LT, M ,94.8994,90,High Waist,Full Length
+TopClothes,ghaV8ER3, S ,46.1214,98,Scoop Neck,Short Sleeve
+Shoes,TLRtwLis, XL,82.5916,17,Sandals,Canvas
+TopClothes,tx2tW1WP, S ,83.6271,77,Crew Neck,Short Sleeve
+TopClothes,oVxbuuGS,XXL,79.2489,47,Halter Neck,Long Sleeve
+BotClothes,8CDvkKQf, S ,80.3229,81,Mid Waist,Ankle Length
+BotClothes,yZEbIkq4, XL,84.0446,28,Mid Waist,Capri Length
+BotClothes,Ek1aY0vF, M ,11.7771,36,Mid Waist,Ankle Length
+Accessories,aItv4cYs,XXL,57.0064,82,Belt,Spring
+TopClothes,wDPWJbr7,XXL,92.6609,14,Crew Neck,Long Sleeve
+Shoes,1l1uHmwL, XL,25.0105,24,Sneakers,Leather
+BotClothes,heqgd9Uc,XXL,92.4851,15,Mid Waist,Ankle Length
+Accessories,lpZ60Tta, L ,57.8607,47,Hat,Spring
+Accessories,3UHPW10I,XXL,78.2025,83,Hat,Spring
+BotClothes,OX4zCtHX, M ,44.152,19,Low Waist,Ankle Length
+TopClothes,3q4XLApI, M ,15.7707,24,Scoop Neck,Long Sleeve
+Accessories,a6yGmCYu,XXL,51.6175,34,Scarf,Fall
+Accessories,VBfaNvEu, M ,27.9357,18,Belt,Fall
+TopClothes,B19cQqmy, XL,31.6245,37,Crew Neck,3/4 Sleeve
+Accessories,nGwLPmlA, S ,90.3784,13,Belt,Summer
+BotClothes,Yrp9TYSy, M ,12.5242,88,Low Waist,Capri Length
+BotClothes,hKfu2yrj,XXL,63.4254,100,High Waist,Full Length
+Accessories,WulaHgR8, S ,81.5479,40,Hat,Fall
+BotClothes,9MGJL6TW, M ,11.5326,37,High Waist,Ankle Length
+Shoes,dylyGs3I, L ,39.8782,41,Flats,Rubber
+BotClothes,q79MbCHv, S ,87.6977,11,Low Waist,Full Length
+Shoes,8IKDSKTB, M ,10.7086,87,Boots,Rubber
+BotClothes,M0F8VXL0, S ,24.9858,30,High Waist,Capri Length
+BotClothes,VfXKlSQj,XXL,84.8329,47,Mid Waist,Capri Length
+TopClothes,S1Rgi2ZG, M ,32.4046,24,Crew Neck,3/4 Sleeve
+TopClothes,Rs6XY5is, XL,13.5405,87,V-Neck,3/4 Sleeve
+BotClothes,HKnFOkxW,XXL,77.2658,97,High Waist,Ankle Length
+TopClothes,RZVEEaFC,XXL,93.5096,33,Crew Neck,Short Sleeve
+TopClothes,GmzIMb5f, M ,71.2177,28,Halter Neck,Short Sleeve
+Accessories,3F5V7PH8, M ,23.3076,19,Scarf,Spring
+BotClothes,Pf5tQpIR, XL,12.2111,62,High Waist,Capri Length
+BotClothes,7dWmRaWm, S ,26.3097,50,Mid Waist,Capri Length
+Accessories,t2dz2DEQ, L ,79.4714,12,Hat,Spring
+Accessories,SrrBHam4, L ,29.5837,94,Scarf,Spring
+Accessories,tibVdoWW, M ,93.7568,51,Belt,Summer
+BotClothes,3FPFfZl6,XXL,23.5356,25,Mid Waist,Full Length
+BotClothes,TWv4owkR, XL,50.0601,71,Low Waist,Capri Length
+TopClothes,JPG5150j, L ,91.9605,41,Crew Neck,Long Sleeve
+Accessories,Q1jPmupi, L ,54.93,42,Scarf,Summer
+TopClothes,i9UGSxIR, S ,87.1841,14,Crew Neck,3/4 Sleeve
+Accessories,MMz53eXE, XL,25.6038,62,Belt,Spring
+Accessories,buMYIlkB, XL,49.9997,63,Scarf,Spring
+Shoes,EaLM6jiH,XXL,93.1553,78,Boots,Rubber
+TopClothes,SvIEQOZJ, M ,89.0628,85,V-Neck,3/4 Sleeve
+TopClothes,qnU54e6S, XL,86.8242,92,Scoop Neck,Long Sleeve
+BotClothes,eBefRWCU, M ,99.4589,79,Mid Waist,Ankle Length
+Accessories,7F9sUAbG, XL,31.7426,15,Scarf,Summer
+BotClothes,jt80fyTE, S ,15.1115,11,Mid Waist,Capri Length
+TopClothes,dc745Wzn, S ,37.203,84,Scoop Neck,3/4 Sleeve
+TopClothes,tejl16LK, XL,74.7389,12,Crew Neck,Short Sleeve
+Accessories,bJvnRcad,XXL,67.6965,75,Scarf,Winter
+TopClothes,HfOu0jxq, M ,86.003,10,Crew Neck,3/4 Sleeve
+TopClothes,4YAJvCOd, L ,43.8856,32,V-Neck,Short Sleeve
+Accessories,Qm8WqAw5, M ,47.6046,49,Bag,Summer
+BotClothes,YwlqLdJO, L ,45.7149,70,High Waist,Ankle Length
+Shoes,KJofiVQt, M ,33.9537,76,Boots,Canvas
+Accessories,jrAOYW8G, XL,74.8241,77,Hat,Fall
+Accessories,0fc0MU7f, S ,82.1357,18,Scarf,Spring
+TopClothes,27CoZgos, XL,48.4753,18,Crew Neck,3/4 Sleeve
+TopClothes,VwPtDyuO, S ,55.8364,55,Scoop Neck,Long Sleeve
+TopClothes,MjYGUUTX, M ,22.1705,37,Halter Neck,3/4 Sleeve
+Shoes,C51SF1vf, M ,45.9484,70,Boots,Leather
+BotClothes,tzUAMQUT, L ,53.1474,42,Low Waist,Capri Length
+TopClothes,a3HI3i6I, S ,22.5028,59,Scoop Neck,Short Sleeve
+Shoes,05VnzJCa, XL,61.934,65,Sandals,Synthetic
+TopClothes,U4mQ9f6p, L ,17.6495,97,Halter Neck,Short Sleeve
+Shoes,w2lvSgV7, L ,94.1771,46,Flats,Leather
+TopClothes,ahHdlyfG,XXL,94.3666,65,Scoop Neck,Short Sleeve
+Accessories,d68yRMzx,XXL,79.8779,43,Hat,Winter
+Shoes,1CWDkciM, M ,30.5506,42,Flats,Synthetic
+Accessories,1X3MICZ3, L ,32.3002,71,Hat,Winter
+TopClothes,DxsDn7UQ, S ,43.2456,35,Halter Neck,Short Sleeve
+Accessories,rd0CKrG7, L ,53.6583,61,Hat,Winter
+BotClothes,OGva48Yv, L ,52.6255,32,Mid Waist,Full Length
+BotClothes,KoU5gsKQ, S ,99.8325,88,Low Waist,Full Length
+Shoes,JjtN6CxI, L ,70.4541,73,Sandals,Synthetic
+Accessories,hIvvexah,XXL,41.2433,51,Hat,Summer

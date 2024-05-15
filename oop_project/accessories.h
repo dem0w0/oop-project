@@ -18,4 +18,10 @@ public:
 	string getType() const override {
 		return "Accessories";
 	}
+
+	void displayDetails() const override {
+		ClothingItem::displayDetails();
+		cout << setw(10) << right << type << " |";
+		cout << setw(11) << left << seasonality << " |";
+	}
 };

@@ -1,8 +1,8 @@
 ﻿  main.cpp
-D:\Program files\github\repository1\oop-project\oop-project\oop_project\clothingItems.h(16,14): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Демир\Documents\GitHub\oop-project\oop_project\clothingItems.h(16,14): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
   (compiling source file 'main.cpp')
   
-D:\Program files\github\repository1\oop-project\oop-project\oop_project\main.cpp(20,17): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-D:\Program files\github\repository1\oop-project\oop-project\oop_project\main.cpp(119,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-D:\Program files\github\repository1\oop-project\oop-project\oop_project\main.cpp(245,17): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-  oop_project.vcxproj -> D:\Program files\github\repository1\oop-project\oop-project\x64\Debug\oop_project.exe
+C:\Users\Демир\Documents\GitHub\oop-project\oop_project\main.cpp(20,17): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Демир\Documents\GitHub\oop-project\oop_project\main.cpp(119,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\Демир\Documents\GitHub\oop-project\oop_project\main.cpp(245,17): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  oop_project.vcxproj -> C:\Users\Демир\Documents\GitHub\oop-project\x64\Debug\oop_project.exe

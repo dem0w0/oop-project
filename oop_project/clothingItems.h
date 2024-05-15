@@ -37,7 +37,7 @@ public:
 		cout << setw(5) << left << size << " |";
 		cout << setw(7) << right << fixed << setprecision(2) << price << " |";
 		cout << setw(8) << right << quantity << " |";
-		cout << setw(13) << (availability ? "Available" : "Not available") << " |" << endl;
+		cout << setw(13) << (availability ? "Available" : "Not available") << " |";
 	}
 	virtual string getType() const = 0;
 	virtual string getDetails() const = 0;

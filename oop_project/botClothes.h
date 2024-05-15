@@ -19,4 +19,10 @@ public:
 	string getType() const override {
 		return "BotClothes";
 	}
+
+	void displayDetails() const override {
+		ClothingItem::displayDetails();
+		cout << setw(10) << right << waistType << " |";
+		cout << setw(12) << left << length << "|";
+	}
 };

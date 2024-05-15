@@ -261,16 +261,16 @@ void displayWithPagination(vector<ClothingItem*>& items, const string& itemType)
 			int startIdx = (page - 1) * itemsPerPage;
 			int endIdx = min(startIdx + itemsPerPage, static_cast<int>(filteredItems.size()));
 
-			cout << "+--------+------+--------+---------+--------------+-------------------+" << endl;
-			cout << "|  Name  | Size | Price  | Quantity| Availability |     Additional    |" << endl;
-			cout << "+--------+------+--------+---------+--------------+-------------------+" << endl;
+			cout << "+----------+------+--------+---------+--------------+------------------------+" << endl;
+			cout << "|   Name   | Size | Price  | Quantity| Availability |       Additional       |" << endl;
+			cout << "+----------+------+--------+---------+--------------+------------------------+" << endl;
 
 			for (int i = startIdx; i < endIdx; ++i) {
 				filteredItems[i]->displayDetails();
 				cout << endl;
 			}
 
-			cout << "+--------+------+--------+---------+--------------+-------------------+" << endl;
+			cout << "+----------+------+--------+---------+--------------+------------------------+" << endl;
 
 			cout << "Enter the command ('next', 'prev', 'exit' or page number which you want to go): ";
 			cin >> userInput;
@@ -306,7 +306,7 @@ void displayWithPagination(vector<ClothingItem*>& items, const string& itemType)
 
 int main() {
 	vector<ClothingItem*> items;
-	generateRandomObjectsToFile("objects.txt", 100);
+	//generateRandomObjectsToFile("objects.txt", 100);
 	autoCreatingObjects(items);
 
 	int width = 30, choice, invChoice;

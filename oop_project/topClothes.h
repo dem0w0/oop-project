@@ -19,4 +19,10 @@ public:
 	string getType() const override {
 		return "TopClothes";
 	}
+
+	void displayDetails() const override {
+		ClothingItem::displayDetails();
+		cout << setw(11) << right << neckline << "|";
+		cout << setw(12) << left << sleeveLength << "|";
+	}
 };
