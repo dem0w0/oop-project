@@ -595,6 +595,11 @@ void deleteLineByName(const string& targetName) {
 
 	if (!found) {
 		cerr << "\033[1;31mName is not found\033[0m" << endl;
+		cin.clear();
+		cin.ignore(numeric_limits<streamsize>::max(), '\n');
+		cout << "Please Enter to continue...";
+		cin.get();
+		system(CLEAR_SCREEN);
 		return;
 	}
 
@@ -731,8 +736,9 @@ int main() {
 					break;
 				default:
 					system(CLEAR_SCREEN);
-					cout << "\033[1;31mThe choice is incorrect try again\033[0m\nPress Enter to continue...";
+					cin.clear();
 					cin.ignore(numeric_limits<streamsize>::max(), '\n');
+					cout << "\033[1;31mThe choice is incorrect try again\033[0m\nPlease Enter to continue...";
 					cin.get();
 					break;
 				}
@@ -757,7 +763,11 @@ int main() {
 			break;
 		default:
 			system(CLEAR_SCREEN);
-			cout << "\033[1;31mThe choice is incorrect try again\033[0m";
+			cin.clear();
+			cin.ignore(numeric_limits<streamsize>::max(), '\n');
+			cout << "\033[1;31mThe choice is incorrect try again\033[0m\nPlease Enter to continue...";
+			cin.get();
+			system(CLEAR_SCREEN);
 			break;
 		}
 	}
